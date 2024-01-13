@@ -28,11 +28,11 @@ function Top() {
                 className='absolute w-full md:h-[700px] h-[500px] object-cover shadow-md shadow-sky-500 z-[-10]'
                 alt="" /> */}
             <div className='flex flex-col justify-center items-center nd:gap-[30px] gap-[20px]'>
-                <Logo className='md:w-[160px] w-[140px]' />
-                <div className='text-animation text-gray-200 md:text-7xl text-3xl text-center font-bold block'>
+                {/* <Logo className='md:w-[160px] w-[140px]' /> */}
+                <div className='font-fontDefault text-animation text-gray-200 md:text-7xl text-3xl text-center font-bold block'>
                     Mandi Winter of Code {year}
                 </div>
-                <div className='text-center font-medium md:text-[35px]'>Dive into the world of open source</div>
+                <div className='text-center font-fontDefault font-medium md:text-[35px]'>Dive into the world of open source</div>
             </div>
         </div>
     )

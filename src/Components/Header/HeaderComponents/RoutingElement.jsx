@@ -5,7 +5,7 @@ function RoutingElem(props) {
     return (
         <NavLink to={props.reach} className={({ isActive }) => `${!isActive ?
             "text-gray-100" : "text-[#0ea5e9] "} text-[22px] 
-            transition-all duration-500 ease-out 
+            transition-all duration-500 ease-out font-fontDefault
             font-semibold hover:text-[#0ea5e9] ${props.className}`}>
             {props.name}</NavLink>
 
