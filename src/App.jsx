@@ -3,6 +3,7 @@ import {
   Header,
   Home,
   Projects,
+  
 } from "./index"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Routes>
         <Route index path="/" Component={Home} />
+        
         <Route path="/projects" Component={Projects} />
       </Routes>
 
