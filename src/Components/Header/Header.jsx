@@ -22,6 +22,9 @@ function Header() {
                 {!isMobile && <div className='flex md:gap-[30px] justify-center items-center'>
                     <RoutingElem reach="/" name="Home" />
                     <RoutingElem reach="/projects" name="Projects" />
+                    <RoutingElem reach="/Faqs" name="FAQs" />
+                    <RoutingElem reach="/Login" name="Login" />
+
                 </div>}
                 {isMobile && <div className='relative'>
                     <ResponsiveBtn onClick={() => { setdisplayNav(!displayNav) }} />
@@ -29,6 +32,10 @@ function Header() {
                     justify-start items-center border-sky-500 border-2 gap-[20px] backdrop-blur-[20px] rounded-xl'>
                         <RoutingElem reach="/" name="Home" className={NavClassName} />
                         <RoutingElem reach="/projects" name="Projects" className={NavClassName} />
+                        <RoutingElem reach="/Faqs" name="FAQs" className={NavClassName} />
+                        <RoutingElem reach="/Login" name="Login" className={NavClassName} />
+
+
                     </div>}
                 </div>}
             </div>
