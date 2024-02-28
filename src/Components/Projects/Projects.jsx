@@ -4,7 +4,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 // const FramerImage = motion.img;
 import GithubIcon  from "../Icons.jsx";
-import SwiftServe from "/Volumes/OFFICIAL/REACT 1/MWOC/winter-of-code/public/Logo/kamandpromptlogo.png";
+import SwiftServe from "/Logo/IitMandi.png";
 // import { motion } from "framer-motion";
 // import TransitionEffect from "../TransitionEffect";
 
