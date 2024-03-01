@@ -19,7 +19,7 @@ function Header() {
         shadow-lg absolute z-50 '>
             <Logo />
             <div className='relative'>
-                {!isMobile && <div className='flex md:gap-[30px] justify-center items-center'>
+                {!isMobile && <div className='flex 2xl:gap-[30px] gap-[30px] justify-center items-center'>
                     <RoutingElem reach="/" name="Home" />
                     <RoutingElem reach="/projects" name="Projects" />
                     <RoutingElem reach="/Faqs" name="FAQs" />

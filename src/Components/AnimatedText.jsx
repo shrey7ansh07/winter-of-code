@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const quote ={
         initial: {
@@ -35,7 +36,7 @@ const AnimatedText = ({ text, className = "" }) => {
     overflow-hidden sm:py-0
     "
     >
-        <h1 className={`inline-block w-full text-dark font-bold capitalize text-8xl 
+        <motion.h1 className={`inline-block w-full text-dark font-bold capitalize text-8xl 
         dark:text-light
         ${className}`}
         variants={quote}
@@ -45,16 +46,16 @@ const AnimatedText = ({ text, className = "" }) => {
             {
                     text.split(" ").map((word,index) => { 
                             return (
-                                    <span key={word+"-"+index} className="inline-block" 
+                                    <motion.span key={word+"-"+index} className="inline-block" 
                                     variants={singleword}
                                         
                                     >
                                             {word}&nbsp;
-                                    </span>
+                                    </motion.span>
                             );
                     })
             }
-        </h1>
+        </motion.h1>
     </div>
   );
 };

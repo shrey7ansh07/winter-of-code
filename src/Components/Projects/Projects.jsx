@@ -1,13 +1,13 @@
 import AnimatedText from "../AnimatedText";
 import React from "react";
-// import Layout from "@/components/Layout";
+import Layout from "./Layout";
 import { Link } from 'react-router-dom';
-// const FramerImage = motion.img;
 import GithubIcon  from "../Icons.jsx";
 import SwiftServe from "/Logo/IitMandi.png";
-// import { motion } from "framer-motion";
-// import TransitionEffect from "../TransitionEffect";
+import { motion } from "framer-motion";
 
+const FramerImage = motion.img;
+// import TransitionEffect from "../TransitionEffect";
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
     <article
@@ -25,7 +25,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         target="_blank"
         className="w-1/2  cursor-pointer overflow-hidden rounded-lg lg:w-full"
       >
-        <img src={img} alt={title} className="w-full h-auto" 
+        <FramerImage src={img} alt={title} className="w-full h-auto" 
         whileHover={{scale:1.05}}
         transition={{duration:0.2}}
         priority
@@ -82,7 +82,7 @@ const Project = ({ type, title, img, link, github }) => {
         target="_blank"
         className="w-full cursor-pointer overflow-hidden rounded-lg"
       >
-        <img src={img} alt={title} className="w-full h-auto" 
+        <FramerImage src={img} alt={title} className="w-full h-auto" 
         whileHover={{scale:1.05}}
         transition={{duration:0.2}}
         priority={true}
@@ -118,13 +118,12 @@ const Project = ({ type, title, img, link, github }) => {
 const Projetcs = () => {
   return (
     <>
-     
-      
+
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
-        <div className="pt-16">
+        <Layout className="pt-16">
           <AnimatedText
             text="Creativity surpasses expertise!"
-            className="!text-7xl mb-16 sm:mb-8 sm:!text-6xl xs:!text-4xl"
+            className="!text-7xl mb-16 sm:mb-8 sm:!text-6xl xs:!text-4xl m-16 md:m-24 sm:m-28 xs:mt-32"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
@@ -184,7 +183,7 @@ const Projetcs = () => {
               />
             </div>
           </div>
-          </div>
+        </Layout>
       </main>
     </>
   );
