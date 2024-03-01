@@ -1,15 +1,18 @@
 import React, { useCallback } from "react";
 import { Particles } from "react-tsparticles";
-import { loadFull } from "tsparticles"; 
+import { loadFull } from "tsparticles";
+import RoundedStarSVG from "./RoundedStar.svg"; // Import your custom SVG file
 
 const ParticlesContainer = () => {
   const ParticlesInit = useCallback(async (engine) => {
     await loadFull(engine);
   }, []);
+
   const ParticlesLoaded = useCallback(async () => {}, []);
+
   return (
     <Particles
-      className=" w-full h-full absolute translate-z-0 z-0"
+      className="w-full h-full absolute translate-z-0 z-0"
       id="tsparticles"
       init={ParticlesInit}
       loaded={ParticlesLoaded}
@@ -17,7 +20,7 @@ const ParticlesContainer = () => {
         fullScreen: { enable: false },
         background: {
           color: {
-            value: '',
+            value: "",
           },
         },
         fpsLimit: 120,
@@ -28,7 +31,7 @@ const ParticlesContainer = () => {
               mode: "push",
             },
             onHover: {
-              enable: true,
+              enable: false,
               mode: "repulse",
             },
             resize: true,
@@ -58,7 +61,7 @@ const ParticlesContainer = () => {
             enable: true,
           },
           move: {
-            direction: 'one',
+            direction: "one",
             enable: true,
             outModes: {
               default: "bounce",
@@ -72,24 +75,32 @@ const ParticlesContainer = () => {
               enable: true,
               area: 800,
             },
-            value: 60,
+            value: 120,
           },
-
           opacity: {
-            value: 0.5,
+            value: 0.5, // Base opacity for particles
+            random: true,
+            anim: {
+              enable: true,
+              speed: 0.5, // Adjust animation speed if needed
+              opacity_min: 0, // Minimum opacity
+              sync: true,
+            },
           },
           shape: {
-            type: "star",
-        options: {
-          polygon: {
-            sides: 8, 
+            type: "image",
+            options: {
+              image: {
+                src: RoundedStarSVG, // Use your custom SVG here
+                width: 100,
+                height: 100,
+              },
+            },
           },
-          radius: 100,
-          }},
           size: {
             value: {
-              min: 3,
-              max: 8,
+              min: 5,
+              max: 15,
             },
           },
         },
