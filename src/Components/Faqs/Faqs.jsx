@@ -1,6 +1,7 @@
 import React from "react";
 import Faq from "react-faq-component";
 import '../../index';
+import AnimatedText from "../AnimatedText";
 
 const data = {
   title: "",
@@ -27,23 +28,22 @@ const data = {
       content: `We take data security seriously. Our systems are designed to ensure the confidentiality and integrity of your data. For more details, you can review our privacy policy.`,
     },
   ],
-    styles: {
-       bgColor: 'green',
-      titleTextColor: 'green',
-       titleTextSize: '48px',
-      rowTitleColor: 'green',
-      rowTitleTextSize: 'medium',
-      rowContentColor: 'grey',
-      rowContentTextSize: '16px',
-       rowContentPaddingTop: '10px',
-      rowContentPaddingBottom: '10px',
-      rowContentPaddingLeft: '50px',
-      rowContentPaddingRight: '150px',
-      arrowColor: "red",
-      transitionDuration: "1s",
-      timingFunc: "ease"
-    }
-  
+  styles: {
+    bgColor: '#0a0918',
+    titleTextColor: 'white',
+    titleTextSize: '52px',
+    rowTitleColor: 'white',
+    rowTitleTextSize: 'medium',
+    rowContentColor: 'grey',
+    rowContentTextSize: '16px',
+    rowContentPaddingTop: '10px',
+    rowContentPaddingBottom: '10px',
+    rowContentPaddingLeft: '50px',
+    rowContentPaddingRight: '150px',
+    arrowColor: "red",
+    transitionDuration: "1s",
+    timingFunc: "ease"
+  }
 };
 
 const styles = {
@@ -62,9 +62,9 @@ const config = {
 const Faqs = () => {
   return (
     <div className="container mx-auto my-48 p-4">
-      <div className="bg-blue p-8 rounded-md shadow-md">
-        <h2 className="text-3xl font-semibold text-center mb-16">Frequently Asked Questions</h2>
-        <Faq data={data} styles={styles} config={config} />
+      <div className="bg-blue px-8  rounded-md shadow-md">
+        <AnimatedText text ="Frequently Asked Questions"  className="text-6xl font-semibold text-center mb-16 "></AnimatedText>
+        <Faq data={data} styles={data.styles} config={config} />
       </div>
     </div>
   );
