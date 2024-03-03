@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import GithubIcon  from "../Icons.jsx";
 import SwiftServe from "/Logo/IitMandi.png";
 import { motion } from "framer-motion";
+import Footer from "../Footer/Footer.jsx";
 
 const FramerImage = motion.img;
 // import TransitionEffect from "../TransitionEffect";

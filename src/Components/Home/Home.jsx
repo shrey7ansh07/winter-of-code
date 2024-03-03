@@ -1,5 +1,6 @@
 import React from 'react'
 import { Top } from "../../index.js"
+import About from './About.jsx'
 import ParticlesContainer from './ParticleContainer.jsx'
 
 function Home() {
@@ -7,6 +8,8 @@ function Home() {
         <div>
             <ParticlesContainer />
             <Top />
+
+            
         </div>
     )
 }
