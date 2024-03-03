@@ -25,6 +25,7 @@ function Top() {
             <div className='flex flex-col justify-center items-center nd:gap-[30px] gap-[20px] '>
                 {/* <Logo className='md:w-[160px] w-[140px]' /> */}
                 <div className='font-fontDefault text-animation text-gray-200  mt-56 2xl:text-7xl lg:text-5xl md:text-3xl text-7xl text-center font-bold block'>
+                    
                     Mandi Winter of Code {year}
                 </div>
                 <div className='text-center font-fontDefault font-medium 2xl:text-4xl xl:text-4xl lg:text-3xl md:text-1xl text-4xl'>Dive into the world of open source</div>

@@ -10,8 +10,8 @@ export default {
         fontDefault: ["monsterrat"]
       },
       colors: {
-        dark: "#000000",
-        light: "#ffffff",
+        dark: "#ffffff",
+        light: "#000000",
         primary: "#B63E96", // 240,86,199
         primaryDark: "#58E6D9", // 80,230,217
     },
