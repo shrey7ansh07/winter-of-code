@@ -33,7 +33,9 @@ const Setup = () => {
     <div className="flex items-center justify-center h-screen mt-20">
 
       <div className="max-w-lg md:max-w-sm sm:max-w-xs w-full p-4  rounded-md shadow-md">
+
         <AnimatedText text="Join The Community!" className="!text-5xl sm:!text-2xl font-semibold my-16 !text-center" />
+
         <h2 className="text-2xl sm:text-xl font-semibold mb-4 text-center">Login</h2>
         <form className="w-full">
           <div className="mb-4">
