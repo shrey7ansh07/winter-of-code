@@ -8,7 +8,7 @@ function Home() {
         <div>
             <ParticlesContainer />
             <Top />
-
+            <About/>
             
         </div>
     )
