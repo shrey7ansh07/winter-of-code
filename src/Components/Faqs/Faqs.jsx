@@ -112,7 +112,7 @@ const Faqs = () => {
       <div className="bg-blue px-8 py-8 mb-12 rounded-md shadow-md">
         <AnimatedText
           text="Frequently Asked Questions"
-          className="!text-7xl !font-semibold !text-white !text-center !mb-16"
+          className="!text-5xl !text-white sm:!text-2xl font-semibold my-16 !text-center"
         />
         <div className="mt-20">
           <Faq data={data} styles={data.styles} config={config} />
