@@ -28,8 +28,8 @@ function Header() {
                 </div>}
                 {isMobile && <div className='relative'>
                     <ResponsiveBtn onClick={() => { setdisplayNav(!displayNav) }} />
-                    {displayNav && <div className='w-[250px] h-[250px] flex flex-col absolute right-0 pt-[20px]
-                    justify-start items-center border-sky-500 border-2 gap-[20px] backdrop-blur-[20px] rounded-xl'>
+                    {displayNav && <div className='w-[120px] h-[250px] flex flex-col absolute right-4 pt-[12px]
+                    justify-between items-center border-sky-500 border-2 gap-[4px] backdrop-blur-[20px] rounded-xl mt-8'>
                         <RoutingElem reach="/" name="Home" className={NavClassName} />
                         <RoutingElem reach="/projects" name="Projects" className={NavClassName} />
                         <RoutingElem reach="/Faqs" name="FAQs" className={NavClassName} />

@@ -5,7 +5,7 @@ function ResponsiveBtn({ ...props }) {
     return (
         <PiDotsNineBold
             {...props}
-            className='w-[40px] h-auto hover:text-sky-500 cursor-pointer hover:scale-105' />
+            className='w-[48px] lg:flex-col h-auto hover:text-sky-500 cursor-pointer hover:scale-105 pl-[16px] pr-[2px]' />
     )
 }
 
