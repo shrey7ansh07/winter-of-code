@@ -12,10 +12,10 @@ const Footer = () => {
             <span>{new Date().getFullYear()} &copy; All Rights Reserved</span>
             <div className='flex items-center lg:py-2'>
             Build with <span className='text-primaryDark text-2xl px-1'>&#9825; </span> by &nbsp;
-            <Link href="/" className=' underline underline-offset-2'>Vivek Aggarwal</Link>
+            <Link href="/" className=' underline underline-offset-2'>Tech team</Link>
             </div>
             
-            <Link href="/" className=' underline underline-offset-2'>Say Hello</Link>
+            <Link href="/" className=' underline underline-offset-2'>Contact us</Link>
         </Layout>
     </footer>
   )
